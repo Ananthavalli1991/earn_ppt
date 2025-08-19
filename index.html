@@ -10,14 +10,13 @@
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/reveal.css">
   <link rel="stylesheet" href="https://unpkg.com/reveal.js/dist/theme/black.css" id="theme">
 
-  <!-- Highlight.js (code syntax highlighting) - theme auto via plugin -->
+  <!-- Highlight.js (code syntax highlighting) -->
   <link rel="stylesheet" href="https://unpkg.com/highlight.js/styles/github.min.css">
 
   <!-- KaTeX (math rendering) -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
 
   <style>
-    /* Subtle polish for a modern look */
     .reveal .slides section h1,
     .reveal .slides section h2 {
       letter-spacing: 0.5px;
@@ -47,13 +46,13 @@
       <section>
         <h1>Quarterly Earnings Report</h1>
         <p class="muted">Interactive presentation with modern features</p>
-        <p class="brand">Prepared by: <strong>Technical Consultant</strong> · <span class="badge">MY email:23f1001029@ds.study.iitm.ac.in</span></p>
+        <p class="brand">Prepared by: <strong>Technical Consultant</strong> · <span class="badge"><a href="mailto:23f1001029@ds.study.iitm.ac.in">23f1001029@ds.study.iitm.ac.in</a></span></p>
         <aside class="notes">
           Welcome everyone. Use the right/left arrows to navigate. Press 's' to open speaker view with these notes. We'll showcase fragments, markdown, code, math, and more.
         </aside>
       </section>
 
-      <!-- MARKDOWN SLIDE (requirement: at least one slide written in Markdown) -->
+      <!-- MARKDOWN SLIDE -->
       <section data-markdown>
         <textarea data-template>
 ### Highlights (Markdown)
@@ -70,7 +69,7 @@
         <aside class="notes">Call out the sustained YoY growth and trajectory vs guidance. Mention cash conversion improvement.</aside>
       </section>
 
-      <!-- FRAGMENTS (animated elements) -->
+      <!-- FRAGMENTS -->
       <section>
         <h2>Outlook — Q+1 Guidance</h2>
         <ul>
@@ -83,7 +82,7 @@
         <aside class="notes">Advance one bullet at a time to control flow; pause after GM to discuss mix shift.</aside>
       </section>
 
-      <!-- CODE with syntax highlighting -->
+      <!-- CODE -->
       <section>
         <h2>Sample: KPI Computation (Python)</h2>
 <pre><code class="language-python">from dataclasses import dataclass
@@ -106,7 +105,7 @@ print(round(k.gross_margin_pct(), 2), "%")
         <aside class="notes">Explain how engineering helps finance automate repeatable KPI checks between close and reporting.</aside>
       </section>
 
-      <!-- MATH (financial formulas) -->
+      <!-- MATH -->
       <section>
         <h2>Financial Math</h2>
         <p>Net Present Value (NPV):</p>
@@ -116,7 +115,13 @@ print(round(k.gross_margin_pct(), 2), "%")
         <aside class="notes">Use these to bridge valuation and operating performance; mention WACC sensitivity.</aside>
       </section>
 
-      <!-- SPEAKER NOTES explicit demo -->
+      <!-- CONTACT SLIDE WITH EMAIL -->
+      <section>
+        <h2>Contact Information</h2>
+        <p>Email: <a href="mailto:23f1001029@ds.study.iitm.ac.in">23f1001029@ds.study.iitm.ac.in</a></p>
+      </section>
+
+      <!-- SPEAKER NOTES DEMO -->
       <section>
         <h2>How to Present</h2>
         <p class="muted">Press <kbd>s</kbd> for speaker view · <kbd>f</kbd> for fullscreen</p>
@@ -131,7 +136,7 @@ print(round(k.gross_margin_pct(), 2), "%")
       <!-- CLOSING -->
       <section>
         <h2>Thank You</h2>
-        <p>Contact: <strong>23f1001029@ds.study.iitm.ac.in</strong></p>
+        <p>Contact: <a href="mailto:23f1001029@ds.study.iitm.ac.in">23f1001029@ds.study.iitm.ac.in</a></p>
         <p class="footnote">Deck powered by RevealJS · Markdown · Fragments · Code · Math · Speaker Notes</p>
       </section>
 
@@ -145,24 +150,18 @@ print(round(k.gross_margin_pct(), 2), "%")
   <script src="https://unpkg.com/reveal.js/plugin/notes/notes.js"></script>
   <script src="https://unpkg.com/reveal.js/plugin/math/math.js"></script>
 
-  <!-- KaTeX core (used by math plugin) -->
+  <!-- KaTeX core -->
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
 
   <script>
-    // Initialize Reveal
     Reveal.initialize({
       hash: true,
       slideNumber: true,
       controls: true,
       progress: true,
-      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ],
-      // Math plugin options (using KaTeX from CDN)
-      math: {
-        // KaTeX is loaded from CDN above; these paths are not required when KaTeX is global
-      }
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
     });
   </script>
 </body>
 </html>
-
